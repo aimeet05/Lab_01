@@ -170,8 +170,8 @@ _Perform the same calculation for the 2021 admissions data._
 ```{r Ex_h}
 visitors %>% 
   summarise(
-    mean_2021 = mean(n_2021),
-    med_2021 = median(n_2021)
+    mean_2021 = mean(n_2021, na.rm = TRUE),
+    med_2021 = median(n_2021, na.rm = TRUE)
   )
 ```
 
